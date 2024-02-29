@@ -17,7 +17,7 @@ const blogId = location.pathname.split("/").at(-1);
 async function  fetchRelatedBlogs(){
   setLoading(true);
   let url = `${newBaseUrl}get-blog?blogId=${blogId}`;
- 
+    
   try{
     const res = await fetch(url);
     const data =await res.json();
@@ -25,6 +25,7 @@ async function  fetchRelatedBlogs(){
     setRelatedBlogs(data.relatedBlogs);
     console.log("hey")
     console.log(data.relatedBlogs)
+    
   }
   catch(error){
     console.log(error);
