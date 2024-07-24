@@ -1,3 +1,3 @@
 project live link
 
-boss-blog-app.netlify.app
+https://boss-blog-app.netlify.app/
